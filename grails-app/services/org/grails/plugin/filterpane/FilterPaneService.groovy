@@ -75,7 +75,7 @@ class FilterPaneService {
 	} // end filterParse
 
     private def filterByParams(def params, Class filterClass, boolean doCount) {
-        if (log.isDebugEnabled()) log.debug("filtering... params = ${params.toMapString()}")
+        if (log.isDebugEnabled()) log.debug("filtering...  params = ${params.toMapString()}")
         //def filterProperties = params?.filterProperties?.tokenize(',')
         def filterParams = params.filter ? params.filter : params
         def filterOpParams = filterParams.op
